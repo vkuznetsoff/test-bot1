@@ -11,7 +11,7 @@ const my_const = require('./const')
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
 // Обработка команды /start
-bot.start((ctx) => ctx.reply(`Привет ${ctx.message.from.first_name ? ctx.message.from.first_name : 'незнакомец'}!`))
+bot.start((ctx) => ctx.reply(` Привет ${ctx.message.from.first_name ? ctx.message.from.first_name : 'незнакомец'}!`))
 // Обработка команды /help
 bot.help((ctx) => ctx.reply(my_const.commands))
 // Обработка команды /course
